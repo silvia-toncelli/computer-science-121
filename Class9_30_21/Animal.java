@@ -20,7 +20,7 @@ public class Animal
    }
    
    //methods
-   public void setNumLegs(int legs) 
+   public void setNumOfLegs(int legs) 
    {
       this.numberOfLegs=legs;
    }
@@ -31,5 +31,9 @@ public class Animal
    public void printMessage()
    {
       System.out.println("Welcome to our zoo!");
+   }
+   public int getNumOfLegs()
+   {
+      return this.numberOfLegs;
    }
 }
