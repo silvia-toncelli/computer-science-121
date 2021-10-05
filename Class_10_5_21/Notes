@@ -1,0 +1,27 @@
+if-else statements 
+
+if(boolean_condition){
+   //code in here runs if the boolean condition is true
+}
+
+else{
+   //code in here runs if boolean condition(s) is not true 
+}
+
+example in method:
+public int ----- (int num)
+{
+
+   if (num<0) 
+   {
+      //brackets are required if there is more than 1 line and strongly reccomended for multiple lines
+      return num;
+   }
+   
+   else 
+   {
+      //else statement is required here because if not the method may not return anything
+      return 0;
+   }
+   
+}
