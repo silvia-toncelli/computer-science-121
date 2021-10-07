@@ -1,0 +1,47 @@
+Notes: 
+-primitives: int, char, short, long, double, float, boolean, byte 
+
+String
+-NOT a primitive, string of chars instead 
+-sequence of characters 
+   -each character has an index number - position in the String 
+   -index starts at 0 (NOT 1)
+-String is an object instead (like someone wrote a class with name "String")
+-can be written as String s = "..."; OR String s = new String("...");
+-String built in methods: 
+   -int lengthOfString = variableName.length(); 
+      -length() returns the amount of chars in the String 
+      -returns and int
+   -int characterLocation = variableName.indexOf(char c);
+   -int characterLocation = variableName.indexOf(char c, int index);
+      -indexOf() returns the location of a character in the string/ the position of a character in a String
+      -returns an int
+      -can start from a certain index if the user desires 
+      -returns -1 if the character is not located in the String
+   -char characterAtIndex = variableName.charAt(int index);
+      -returns the character at a specified location in the String 
+      -returns a char
+      -can throw an "index out of bounds error" if the index is bigger than or equal to the length of the string or less than 0
+   -int comparison = variableName.compareTo(String s);
+      -returns an int
+      -returns a negative number if variableName is less than s
+      -returns 0 if variableName is equal to s
+      -returns a positibe number if variableName is greater than s
+      -the number it returns is the difference between the ascii values of the characters at the first index where the strings differ
+         -ascii value of the character where the String differs in variableName - ascii value of the character where the String differs in s
+   -boolean isEqual = variableName.equals(String s);
+      -returns a boolean signifying whether or not the Strings are equal
+      -also can use variableName.equalsIgnoreCase()
+   -String sub = variableName.substring(int i, int k);
+      -returns a String composed of the characters located within the 2 indexes given as parameters
+      -returns a string of the characters loctaed between i and k (including i, not including k)
+
+Booleans 
+-true or false 
+-boolean operators (used in if statements): 
+   - && = and
+   - || = or
+   - ! = not 
+   - == = equals
+   - != = not equals
+
